@@ -1,0 +1,4 @@
+# Ignore ambientes virtuais e pacotes Python instalados
+Lib/
+*.pyc
+__pycache__/
