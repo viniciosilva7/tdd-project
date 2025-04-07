@@ -157,33 +157,3 @@ sequenceDiagram
     API->>-Client: Successful Response
     Note right of Client: Status Code: 204 - No content
 ```
-
-## Desafio Final
-- Create
-    - Mapear uma exceção, caso dê algum erro de inserção e capturar na controller
-- Update
-    - Modifique o método de patch para retornar uma exceção de Not Found, quando o dado não for encontrado
-    - a exceção deve ser tratada na controller, pra ser retornada uma mensagem amigável pro usuário
-    - ao alterar um dado, a data de updated_at deve corresponder ao time atual, permitir modificar updated_at também
-- Filtros
-    - cadastre produtos com preços diferentes
-    - aplique um filtro de preço, assim: (price > 5000 and price < 8000)
-
-## Preparar ambiente
-
-Vamos utilizar Pyenv + Poetry, link de como preparar o ambiente abaixo:
-
-[poetry-documentation](https://github.com/nayannanara/poetry-documentation/blob/master/poetry-documentation.md)
-
-## Links uteis de documentação
-[mermaid](https://mermaid.js.org/)
-
-[pydantic](https://docs.pydantic.dev/dev/)
-
-[validatores-pydantic](https://docs.pydantic.dev/latest/concepts/validators/)
-
-[model-serializer](https://docs.pydantic.dev/dev/api/functional_serializers/#pydantic.functional_serializers.model_serializer)
-
-[mongo-motor](https://motor.readthedocs.io/en/stable/)
-
-[pytest](https://docs.pytest.org/en/7.4.x/)
